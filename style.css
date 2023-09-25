@@ -1,5 +1,4 @@
-@import 'resources/fonts/fonts.css';
-@import '/utility/footer.css';
+@import './resources/fonts/fonts.css';
 
 * {
     box-sizing: border-box;
