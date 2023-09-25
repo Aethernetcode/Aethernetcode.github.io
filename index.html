@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HALFTONE</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="/portfolio/resources/images/halftone-logo-small.svg" type="image/x-icon">
+</head>
+<body>
+    <section class="desc-sec">
+        <div class="table">
+            <div class="row-1">
+                <div class="col" id="table-title">
+                    Portfolio -<br>
+                    Linus Weber
+                </div>
+                <div class="col mid" id="table-content">
+                    Content <br>
+                    <br>
+                    <span>
+                        About me <br>
+                        Work <br>
+                        Get in touch
+                    </span>
+                </div>
+                <div class="col">
+                    <div class="table-contact">
+                        Contact: <br>
+                        <a href= "mailto:linusweber@gmx.at">linusweber@gmx.at</a>
+                    </div>
+                    <!-- <hr id="small-hr">
+                    <div class="sub-row table-contact">
+                        Join our Discord: <br>
+                        <a href="https://discord.gg/uAuXfda">https://discord.gg/uAuXfda</a>
+                    </div> -->
+                </div>
+            </div>
+            <!-- <hr>
+            <div class="row-2">
+                <div class="col table-projects">
+                    11 Projects
+                </div>
+                <div class="col mid table-projects">
+                    Last updated 03.04.2023
+                </div>
+                <div class="col">
+                    <a href="https://aether.net.co">Back to Aether</a>
+                </div>
+            </div> -->
+        </div>
+
+        <div class="text-sub-sec">
+            <div class="pr-name">
+                    <h1>ABOUT ME</h1>
+                    <h2>Who I am</h2>
+                </div>
+               <div class="text">
+                   I am a self-taught 3d-artist and Product- / Web-designer. 
+                   I use Blender, Fusion 360 and Figma for most of my work.
+                </div>
+            </div>
+        </div>
+
+        <div class="text-sub-sec">
+            <div class="pr-heading">
+                <h1>MY EDUCATION</h1>
+            </div>
+            <div class="text">
+                2010 - 2014: Volksschule Arzl <br>
+                2014 - 2018: Unterstufe: BRG Sillgasse <br>
+                2018 - 2023: Oberstufe: HTL Anichstraße für Elektronik und technische Informatik <br>
+            </div>
+        </div>
+    </section>
+
+    <section class="work">
+        <h1 class="work-title">MY WORK</h1>
+        <div id="btn-group">
+            <button class="category active" onclick="filterSelection('all')">All</button>
+            <button class="category" onclick="filterSelection('product')">Products</button>
+            <button class="category" onclick="filterSelection('graphics')">Graphics</button>
+            <!-- <button class="category" onclick="filterSelection('ui')">UI/UX</button> -->
+        </div>
+        <div class="work-projects">
+            <img src="projects/pr-thumbnails/aether.png" alt="graphics" class="gallery-element normal graphics ui" onclick="window.location.href='projects/graphics/';">
+            <img src="projects/pr-thumbnails/mower.png" alt="product" class="gallery-element normal product" onclick="window.location.href='projects/mower-robot/';">
+            <img src="projects/pr-thumbnails/marc.png" alt="product" class="gallery-element large product" onclick="window.location.href='projects/marc/';">
+            <img src="projects/pr-thumbnails/keypad.png" alt="product" class="gallery-element normal product" onclick="window.location.href='projects/keypad/';">
+            <!-- <img src="projects/pr-thumbnails/varydeen.png" alt="graphics" class="gallery-element normal graphics" onclick="window.location.href='projects/varydeen/';"> -->
+            <img src="projects/pr-thumbnails/cup.png" alt="product" class="gallery-element normal product" onclick="window.location.href='projects/cup/';">
+            <img src="projects/pr-thumbnails/3d-modelling.png" alt="product" class="gallery-element normal product" onclick="window.location.href='projects/3D/';">
+        </div>
+    </section>
+    <section class="desc-sec">
+        <div class="text-sub-sec">
+            <div class="pr-heading">
+                <h1>GET IN TOUCH</h1>
+            </div>
+            <div class="text">
+                You can contact me at <a href= "mailto:linusweber@gmx.at">linusweber@gmx.at</a>.
+            </div>
+        </div>
+    </section>
+
+    <div id="footer">
+        <script>
+        fetch("/utility/footer.html", { method: 'GET'})
+        .then(res => res.text())
+        .then(data => document.getElementById("footer").innerHTML += data);
+        </script>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

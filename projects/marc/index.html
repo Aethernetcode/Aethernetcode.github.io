@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>marc</title>
+    <link rel="stylesheet" href="../pr-style.css">
+    <link rel="shortcut icon" href="/portfolio/resources/images/halftone-logo-small.svg" type="image/x-icon">
+</head>
+<body>
+    <section class="banner">
+        <button class="back" onclick="window.location.href='/portfolio/';"><svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7.53284 0.894775L0.86179 7.23228C0.44679 7.62653 0.446789 8.28802 0.86179 8.68227L7.53284 15.0198" stroke="#F5F5F5" stroke-linecap="round"/></svg></button>
+        <img src="images/banner.webp" alt="" class="banner-img">
+        <img src="images/marc-banner-logo.svg" alt="" class="banner-logo">
+    </section>
+
+    <section class="text-sec title-sec">
+        <div class="text-sub-sec">
+            <div class="pr-name">
+                <h1>Marc-1</h1>
+                <h2>SmartSocket</h2>
+            </div>
+            <div class="text">
+                <div class="pr-status">
+                    <div class="status">
+                        <h3>Status</h3>
+                        In Development
+                    </div>
+                    <div class="type">
+                        <h3>Type</h3>
+                        Product Design
+                    </div>
+                </div>
+                MARC-1 is an innovative smart plug designed to help you monitor and control your power consumption, all from the convenience of your smartphone. It is designed to seamlessly integrate into your home, while still speaking a strong design language. The Webinterface provides you with real-time data on your energy usage, as well as the ability to remotely control connected devices. Whether you're looking to reduce your carbon footprint, save on energy costs, or simply have greater control over your home's electricity usage, MARC-1 is the perfect solution.
+            </div>
+        </div>
+        <div class="text-sub-sec">
+            <div class="pr-heading">
+                <h1>Make your grid a network</h1>
+            </div>
+            <div class="text">
+                One of the key technical features of MARC-1 is its use of LoRaWAN technology. This wireless communication protocol enables the smart plug to connect with the main server even in areas where WiFi access is limited or unavailable, making it a practical solution for users who want to use MARC-1 in remote areas. In addition, LoRaWAN technology provides a hassle-free plug-and-play experience, ensuring that users can quickly and easily set up MARC-1 and begin monitoring and controlling their energy consumption.
+            </div>
+        </div>
+    </section>
+
+    <section class="images">
+        <img src="images/wide-01.webp" alt="" class="img-full">
+        <img src="images/q-02.webp" alt="" class="img-half">
+        <video controls autoplay loop class="img-half">
+            <source src="images/animation.mp4" type="video/mp4" class="video">
+        </video>
+    </section>
+
+    <section class="text-sec">
+        <div class="text-sub-sec">
+            <h1 class="pr-heading">Crafting a sustainable future</h1>
+            <div class="text">
+                Thinking from beginning to end, MARC-1 paints a whole picture of sustainability. From its production using biodegradable plastic, to its ability to help users reduce energy consumption, MARC-1 is a product that is designed with the environment in mind. The smart plug's ability to be used in remote areas expands the reach of sustainable energy monitoring and management. By considering repairability as part of its design, MARC-1 embodies a holistic approach to sustainability that encompasses the entire product lifecycle. By providing users with real-time information and control over their energy usage, MARC-1 promotes sustainable living practices and contributes to a more environmentally conscious future.
+            </div>
+        </div>
+    </section>
+
+    <section class="images">
+        <img src="images/transp-04.webp" alt="" class="img-full">
+    </section>
+
+    <section class="text-sec">
+        <div class="text-sub-sec">
+            <h1 class="pr-heading">Enabeling Developers</h1>
+            <div class="text">
+                With the MARC-1 DevKit, developers and enthusiasts can build their own customized smart home systems that integrate with MARC-1's energy monitoring and control capabilities. This provides a unique opportunity for developers to unleash their creativity and explore new possibilities for smart home automation. The DevKit is designed to be developer-friendly, with clear documentation and examples to help developers get started quickly. By enabling developers to build on the MARC-1 platform, MARC-1 is fostering a community of innovators who are driving the future of smart home technology.
+                <!-- <br> <br> Follow MARC-1s development <a href="/marc">here.</a>  -->
+            </div>
+        </div>
+    </section>
+
+    <section class="images">
+        <img src="images/wide-02.webp" alt="" class="img-full">
+        <img src="images/wide-03.webp" alt="" class="img-full">
+    </section>
+
+    <section class="text-sec">
+        <div class="text-sub-sec">
+            <h1 class="pr-heading">The Story</h1>
+            <div class="text">
+                MARC 1 was the graduation project of three friends and me at HTL. I was responsible for the entire Hardware, including the product design and all internal electronics. My design approch started with setting boundries such as a footprint of 5.5cm x 5.5cm and a switchable current of 16A. I then experimented with the external design in Blender. Once I was satisfied with the looks I started modelling the internal supporting structure in Fusion 360 and ultimately 3D-prinitng it for assembly.
+            </div>
+        </div>
+    </section>
+
+    <div id="footer">
+        <script>
+        fetch("/utility/footer.html", { method: 'GET'})
+        .then(res => res.text())
+        .then(data => document.getElementById("footer").innerHTML += data);
+        </script>
+    </div>
+
+</body>
+</html>

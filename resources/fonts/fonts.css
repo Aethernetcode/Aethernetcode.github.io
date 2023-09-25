@@ -1,0 +1,20 @@
+@font-face {
+    font-family: Modernist-mono;
+    src: url(Sk-Modernist-Mono.otf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Modernist;
+    src: url(Sk-Modernist-Regular.otf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Modernist;
+    src: url(Sk-Modernist-Bold.otf);
+    font-weight: bold;
+    font-style: normal;
+}

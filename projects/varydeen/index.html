@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Varydeen</title>
+    <link rel="stylesheet" href="../pr-style.css">
+    <link rel="shortcut icon" href="/halftone/resources/images/halftone-logo-small.svg" type="image/x-icon">
+</head>
+<body>
+    <section class="banner">
+        <button class="back" onclick="window.location.href='/halftone/';"><svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7.53284 0.894775L0.86179 7.23228C0.44679 7.62653 0.446789 8.28802 0.86179 8.68227L7.53284 15.0198" stroke="#F5F5F5" stroke-linecap="round"/></svg></button>
+        <img src="images/banner.webp" alt="" class="banner-img">
+        <img src="images/varydeen-logo.svg" alt="" class="banner-logo">
+    </section>
+
+    <section class="text-sec title-sec">
+        <div class="text-sub-sec">
+            <div class="pr-name">
+                <h1>Varydeen</h1>
+                <h2>Building a community</h2>
+            </div>
+            <div class="text">
+                <div class="pr-status">
+                    <div class="status">
+                        <h3>Status</h3>
+                        Finished
+                    </div>
+                    <div class="type">
+                        <h3>Type</h3>
+                        Logo / CI
+                    </div>
+                </div>
+                Varydeen is a small game studio that is committed to creating immersive and captivating gaming experiences. When designing the logo and CI for Varydeen, the goal was to capture the studio's unique identity and its focus on innovation. The chat-icon inspired logo is meant to incorporate the social elements of gaming and technology.
+            </div>
+        </div>
+    </section>
+
+    <section class="images">
+        <img src="images/wide-01.webp" alt="" class="img-full">
+        <img src="images/half-02.webp" alt="" class="img-half">
+        <img src="images/half-03.webp" alt="" class="img-half">
+        <img src="images/wide-04.webp" alt="" class="img-full">
+    </section>
+
+
+    <div id="footer">
+        <script>
+        fetch("/utility/footer.html", { method: 'GET'})
+        .then(res => res.text())
+        .then(data => document.getElementById("footer").innerHTML += data);
+        </script>
+    </div>
+
+    
+</body>
+</html>
