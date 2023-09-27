@@ -146,6 +146,7 @@ section.images img {
 
 section.images .img-full {
     flex-grow: 2;
+    -webkit-flex-grow: 2;
     flex-basis: 100%;
 }
 
@@ -155,6 +156,7 @@ section.images iframe.img-full {
 
 section.images .img-half {
     flex-grow: 1;
+    -webkit-flex-grow: 1;
 }
 
 section.images video.img-half {
